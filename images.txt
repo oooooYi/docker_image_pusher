@@ -2,7 +2,7 @@
 --platform=linux/arm64 nginx
 --platform=linux/arm64 httpd
 --platform=linux/arm64 rabbitmq
---platform=linux/arm64 consul
+--platform=linux/arm64 consul:1.15.4
 --platform=linux/arm64 jenkins
 --platform=linux/arm64 flink
 --platform=linux/arm64 kibana
@@ -14,7 +14,7 @@
 --platform=linux/amd64 nginx
 --platform=linux/amd64 httpd
 --platform=linux/amd64 rabbitmq
---platform=linux/amd64 consul
+--platform=linux/amd64 consul:1.15.4
 --platform=linux/amd64 jenkins
 --platform=linux/amd64 flink
 --platform=linux/amd64 kibana
