@@ -5,7 +5,6 @@
 --platform=linux/arm64 consul:1.15.4
 --platform=linux/arm64 jenkins/jenkins:latest
 --platform=linux/arm64 flink
---platform=linux/arm64 kibana
 --platform=linux/arm64 grafana/grafana:latest
 
 
@@ -17,7 +16,6 @@
 --platform=linux/amd64 consul:1.15.4
 --platform=linux/amd64 jenkins/jenkins:latest
 --platform=linux/amd64 flink
---platform=linux/amd64 kibana
 --platform=linux/amd64 grafana/grafana:latest
 --platform=linux/amd64 ubuntu/prometheus:2.50.1-22.04_stable
 
