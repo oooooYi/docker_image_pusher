@@ -1,0 +1,27 @@
+--platform=linux/arm64 redhat/ubi8:latest 
+--platform=linux/arm64 mysql
+--platform=linux/arm64 redis
+--platform=linux/arm64 mongo
+--platform=linux/arm64 alpine
+--platform=linux/arm64 debian:11.9
+--platform=linux/arm64 centos:centos7.9.2009
+--platform=linux/arm64 ubuntu:24.04
+--platform=linux/arm64 python:latest
+--platform=linux/arm64 golang:latest
+
+
+--platform=linux/amd64 redhat/ubi8:latest 
+--platform=linux/amd64 mysql
+--platform=linux/amd64 redis
+--platform=linux/amd64 mongo
+--platform=linux/amd64 alpine
+--platform=linux/amd64 debian:11.9
+--platform=linux/amd64 centos:centos7.9.2009
+--platform=linux/amd64 ubuntu:24.04
+--platform=linux/amd64 python:latest
+--platform=linux/amd64 golang:latest
+#支持私库
+#k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
+#xhofe/alist:latest
+#支持指定架构
+# --platform=linux/arm64
