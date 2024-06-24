@@ -1,8 +1,4 @@
-redhat/ubi8:latest --platform=linux/arm64 xhy_images
-debian:11.9
-nginx
-redis
-mysql
+redhat/ubi8:latest --platform=linux/arm64
 #支持私库
 #k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
 #xhofe/alist:latest
