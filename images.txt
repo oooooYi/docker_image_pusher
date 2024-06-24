@@ -1,6 +1,5 @@
-redhat/ubi8:latest
+redhat/ubi8:latest --platform=aarch64 
 debian:11.9
-centos:7.9
 nginx
 redis
 mysql
