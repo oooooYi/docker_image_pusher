@@ -1,7 +1,4 @@
-redhat/ubi8:latest 
---platform=linux/arm64
-redhat/ubi8:latest 
---platform=linux/amd64
+redhat/ubi8:latest --platform=linux/arm64 xhy_images
 debian:11.9
 nginx
 redis
