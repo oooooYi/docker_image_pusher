@@ -1,4 +1,11 @@
+redhat/ubi8:latest  --platform=linux/arm64
+debian:11.9 --platform=linux/arm64
+centos:7.9 --platform=linux/arm64
+redhat/ubi8:latest
+debian:11.9
+centos:7.9
 nginx
+redis
 mysql
 #支持私库
 #k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
