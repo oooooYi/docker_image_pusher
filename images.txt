@@ -1,4 +1,5 @@
-redhat/ubi8:latest --platform=aarch64 
+redhat/ubi8:latest --platform=linux/arm64
+redhat/ubi8:latest --platform=linux/amd64
 debian:11.9
 nginx
 redis
@@ -7,4 +8,4 @@ mysql
 #k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
 #xhofe/alist:latest
 #支持指定架构
---platform=linux/arm64
+# --platform=linux/arm64
