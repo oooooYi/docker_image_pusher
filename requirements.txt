@@ -37,7 +37,7 @@ web.py==0.40
 Mail==2.1.0
 pyzabbix==0.7.5
 schedule==0.6.0
-ntplib==0.3.3
+ntplib==0.3.4
 uwsgi==2.0.18
 XlsxWriter==1.1.8
 kafka-python==1.4.6
