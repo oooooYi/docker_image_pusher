@@ -65,7 +65,6 @@ jobs:
 
     - name: Build the Docker image
       run: |
-        dos2unix init.sh
         make install
         # docker login -u $ALIYUN_REGISTRY_USER -p $ALIYUN_REGISTRY_PASSWORD $ALIYUN_REGISTRY
         # new_image="$ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/python:3.6.15"
