@@ -8,7 +8,7 @@ geoip2==2.9.0
 gevent==1.3.7
 gnsq==0.4.0
 greenlet==0.4.15
-maxminddb==1.4.1
+maxminddb==1.4.0
 monotonic==1.5
 requests==2.22.0
 ruamel.yaml==0.15.81
