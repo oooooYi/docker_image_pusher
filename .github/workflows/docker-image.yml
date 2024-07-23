@@ -1,0 +1,46 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "build_dockerfile" ]
+  pull_request:
+    branches: [ "build_dockerfile" ]
+
+env:
+  ALIYUN_REGISTRY: "${{ secrets.ALIYUN_REGISTRY }}"
+  ALIYUN_NAME_SPACE: "${{ secrets.ALIYUN_NAME_SPACE }}"
+  ALIYUN_REGISTRY_USER: "${{ secrets.ALIYUN_REGISTRY_USER }}"
+  ALIYUN_REGISTRY_PASSWORD: "${{ secrets.ALIYUN_REGISTRY_PASSWORD }}"
+
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+    
+    - name: Docker Login
+      uses: docker/login-action@v3.0.0
+      with:
+        registry: $ALIYUN_REGISTRY
+        username: $ALIYUN_REGISTRY_USER
+        password: $ALIYUN_REGISTRY_PASSWORD
+    
+    - name: Build the Docker image
+      run: |
+        new_image="$ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/python:3.6.15"
+        docker build . --file Dockerfile --tag $new_image
+        docker push $new_image
+        echo "开始清理磁盘空间"
+        echo "=============================================================================="
+        df -hT
+        echo "=============================================================================="
+        docker rmi $new_image
+        echo "磁盘空间清理完毕"
+        echo "=============================================================================="
+        df -hT
+        echo "=============================================================================="  
