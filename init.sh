@@ -2,7 +2,7 @@
 # !/usr/bin/bash
 
 
-ocker login -u $ALIYUN_REGISTRY_USER -p $ALIYUN_REGISTRY_PASSWORD $ALIYUN_REGISTRY
+docker login -u $ALIYUN_REGISTRY_USER -p $ALIYUN_REGISTRY_PASSWORD $ALIYUN_REGISTRY
 new_image="$ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/python:test"
 docker build . --file Dockerfile --tag $new_image
 docker push $new_image
