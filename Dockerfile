@@ -5,4 +5,4 @@ COPY ./requirements.txt   /home
 WORKDIR /home
 
 
-RUN pip install -r requirements.txt 
+RUN pip3 install -r requirements.txt 
