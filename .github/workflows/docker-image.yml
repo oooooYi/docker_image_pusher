@@ -65,17 +65,15 @@ jobs:
 
     - name: Build the Docker image
       run: |
+        docker login -u $ALIYUN_REGISTRY_USER -p $ALIYUN_REGISTRY_PASSWORD $ALIYUN_REGISTRY
         make install
-        # docker login -u $ALIYUN_REGISTRY_USER -p $ALIYUN_REGISTRY_PASSWORD $ALIYUN_REGISTRY
-        # new_image="$ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/python:3.6.15"
-        # docker build . --file Dockerfile --tag $new_image
-        # docker push $new_image
-        # echo "开始清理磁盘空间"
-        # echo "=============================================================================="
-        # df -hT
-        # echo "=============================================================================="
-        # docker rmi $new_image
-        # echo "磁盘空间清理完毕"
-        # echo "=============================================================================="
-        # df -hT
-        # echo "=============================================================================="  
+        echo "开始清理磁盘空间"
+        echo "=============================================================================="
+        df -hT
+        echo "=============================================================================="
+        docker rmi $new_image
+        echo "磁盘空间清理完毕"
+        echo "=============================================================================="
+        df -hT
+        echo "=============================================================================="  
+        
