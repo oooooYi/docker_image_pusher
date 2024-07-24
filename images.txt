@@ -2,7 +2,7 @@
 
 
 
---platform=linux/amd64 python:3.6.15
+--platform=linux/amd64  selenium/standalone-chromium
 
 
 #支持私库
