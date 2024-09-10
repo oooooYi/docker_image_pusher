@@ -2,7 +2,7 @@
 
 
 
---platform=linux/amd64  selenium/standalone-chromium
+--platform=linux/amd64  bitnami/kafka:3.5
 
 
 #支持私库
