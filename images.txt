@@ -2,7 +2,7 @@
 
 
 
---platform=linux/amd64  bitnami/kafka:3.5
+--platform=linux/amd64  mysql:5.7.44
 
 
 #支持私库
