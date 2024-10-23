@@ -2,7 +2,8 @@
 
 
 
---platform=linux/amd64  mysql:5.7.44
+--platform=linux/amd64  elasticsearch:7.17.25
+--platform=linux/amd64  kibana:7.17.25
 
 
 #支持私库
