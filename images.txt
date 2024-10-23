@@ -2,8 +2,8 @@
 
 
 
---platform=linux/amd64  elasticsearch:7.17.25
---platform=linux/amd64  kibana:7.17.25
+--platform=linux/amd64  elasticsearch:7.12.1
+--platform=linux/amd64  kibana:7.12.1
 
 
 #支持私库
