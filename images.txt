@@ -2,7 +2,9 @@
 
 
 
---platform=linux/amd64  apache/kafka:3.9.0
+--platform=linux/amd64  kibana:8.18.0
+--platform=linux/amd64  elasticsearch:8.18.0
+
 
 
 #支持私库
