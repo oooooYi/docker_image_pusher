@@ -2,8 +2,7 @@
 
 
 
---platform=linux/amd64  kibana:8.18.0
---platform=linux/amd64  elasticsearch:8.18.0
+--platform=linux/amd64  calciumion/new-api:latest
 
 
 
