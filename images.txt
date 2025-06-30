@@ -2,8 +2,9 @@
 
 
 
---platform=linux/amd64  calciumion/new-api:latest
+--platform=linux/amd64  opensearchproject/opensearch:latest
 
+--platform=linux/amd64  opensearchproject/opensearch-dashboards:latest
 
 
 #支持私库
