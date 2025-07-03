@@ -2,9 +2,8 @@
 
 
 
---platform=linux/amd64  opensearchproject/opensearch:latest
+--platform=linux/amd64   milvusdb/milvus:latest
 
---platform=linux/amd64  opensearchproject/opensearch-dashboards:latest
 
 
 #支持私库
